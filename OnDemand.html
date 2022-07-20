@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CFOW On Demand</title>
+
+    <!-- Bootstrap CSS  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome  -->
+    <script
+      src="https://kit.fontawesome.com/60de6000b1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="stylesheethome.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="OnDemand.html"
+          ><img src="Images/Connexus_Logo Green and Purple copy.png"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="OnDemand.html">ON DEMAND</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>On Demand</h1>
+    </section>
+
+    <!-----Video Player----->
+    <section class="video">
+      <p>
+        This is a no FOMO zone, members can catch our event content on-demand.
+        Check out this sneak peak!
+      </p>
+
+      <iframe
+        width="560"
+        height="315"
+        src="Video/Conexus_FOW_FutureSkills_Recording_1280x720.mp4"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <!-----Highlights----->
+    <section class="highlights">
+      <h1>Event Highlights</h1>
+
+      <div class="row">
+        <div class="highlights-col">
+          <img src="Images/AdobeStock_166236504.jpeg" />
+          <h3>Volunteering And Community Service Projects</h3>
+          <p>
+            Come together through shared volunteer projects and build
+            relationships, while giving back to the community.
+          </p>
+        </div>
+
+        <div class="highlights-col">
+          <img src="Images/AdobeStock_150700959.jpeg" />
+          <h3>Invest In Your Personal Development</h3>
+          <p>
+            Are you reaching your full potential? Not sure where to start? We
+            have curated content on the most common self-improvement and
+            personal growth areas you may want to consider investing in.
+          </p>
+        </div>
+
+        <div class="highlights-col">
+          <img src="Images/AdobeStock_72115725.jpeg" />
+          <h3>Get The Most Out Of Your Technology</h3>
+          <p>
+            Improve your life at home, work and on-the-the go since the very
+            beginning. Count on these tips and articles to expand your tech
+            know-how.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-----Footer----->
+
+    <section class="footer">
+      <h4>Raison d'être</h4>
+      <p>
+        Championing a flexible work community where team members can develop and
+        thrive
+      </p>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="https://www.linkedin.com/in/sarah-wyatt-4406203/"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.instagram.com/crokeywyatt/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="https://twitter.com/CrokeyWyatt"
+            target="_blank"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+      <p>
+        Made with <i class="fa-brands fa-gratipay"></i> by Sarah Wyatt with Code
+        First Girls
+      </p>
+    </section>
+
+    <!-----JavaScript for  Toggle Menu----->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CFOW About</title>
+
+    <!-- Bootstrap CSS  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome  -->
+    <script
+      src="https://kit.fontawesome.com/60de6000b1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="stylesheethome.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"
+          ><img src="Images/Connexus_Logo Green and Purple copy.png"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="OnDemand.html">ON DEMAND</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+
+    <!-----About Us Content----->
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>What We Do</h1>
+          <p>
+            Conexus is the Employee Resource Group that champions a flexible
+            work community by creating a collaborative work environment, which
+            enables team members to grow and thrive. Conexus focuses on
+            technologies, best practices and innovative ways of thinking and
+            doing which integrates people regardless of where, when and how they
+            work.
+          </p>
+          <a href="OnDemand.html" class="hero-btn purple-btn"
+            >Take A Sneak Peak></a
+          >
+        </div>
+        <div class="about-col">
+          <img src="Images/AdobeStock_304195810.jpeg" />
+        </div>
+      </div>
+    </section>
+
+    <!-----Chapters---->
+    <section class="chapters">
+      <h1>Worldwide Chapters</h1>
+      <p>Find Your Nearest Conexus Chapter</p>
+
+      <div class="row">
+        <div class="chapters-col">
+          <img src="Images/EMEA square.jpg" />
+          <div class="layer">
+            <h3>EMEA</h3>
+            <p>Amsterdam, Bilbao, Cork, Dusseldorf, Glasgow, Tel Aviv</p>
+          </div>
+        </div>
+
+        <div class="chapters-col">
+          <img src="Images/Americas square.jpg" />
+          <div class="layer">
+            <h3>North America and LATAM</h3>
+            <p>
+              Austin, Bogota, Boston, Chicago, Lima, New York, Rio de Janiero
+            </p>
+          </div>
+        </div>
+
+        <div class="chapters-col">
+          <img src="Images/APJ square.jpg" />
+          <div class="layer">
+            <h3>APJC</h3>
+            <p>Auckland, Beijing, Melbourne, Mumbai, Singapore, Tokyo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-----Footer----->
+
+    <section class="footer">
+      <h4>Raison d'être</h4>
+      <p>
+        Championing a flexible work community where team members can develop and
+        thrive​
+      </p>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="https://www.linkedin.com/in/sarah-wyatt-4406203/"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.instagram.com/crokeywyatt/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="https://twitter.com/CrokeyWyatt"
+            target="_blank"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+      <p>
+        Made with <i class="fa-brands fa-gratipay"></i> by Sarah Wyatt with Code
+        First Girls
+      </p>
+    </section>
+
+    <!-----JavaScript for  Toggle Menu----->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200";
+      }
+    </script>
+  </body>
+</html>
